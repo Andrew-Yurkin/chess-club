@@ -1,0 +1,43 @@
+@import '../../styles/helpers';
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__container {
+    padding-top: size(26px, 18px);
+    padding-left: var(--padding-inline);
+    position: relative;
+    transform: translateX(size(0px, -3px));
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    &-img {
+      position: relative;
+      width: size(92px, 89px);
+      height: auto;
+      transform: 
+        translateX(size(0px, 0px)) 
+        translateY(size(1px, 0px))
+        scale(size(1, 0.9));
+    }
+
+    &-text {
+      font-family: var(--font-primary);
+      color: #595653;
+      font-weight: 700;
+      font-size: size(16.65px, 14.42px);
+      line-height: size(107%, 108%, forward);
+      text-transform: uppercase;
+      width: 147px;
+      transform: translateX(size(0px, -4.5px));
+    }
+  }
+}

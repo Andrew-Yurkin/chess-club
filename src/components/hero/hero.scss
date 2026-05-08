@@ -1,0 +1,236 @@
+@import "../../styles/helpers.scss";
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: size(700px, 774px, forward);
+  padding-top: size(125px, 90px);
+  background-color: #E9DED4;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-image: url("/src/assets/hero/bg-texture.png");
+    background-repeat: repeat;
+    mix-blend-mode: color-burn;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+// Сцена ================
+  &__scene {
+    position: absolute;
+    pointer-events: none;
+    transform-origin: top center;
+    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__scene img {
+    position: absolute;
+    max-width: none;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &__sun,
+  &__city,
+  &__board,
+  &__king,
+  &__queen,
+  &__horse,
+  &__pawn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+  }
+
+  &__sun {
+    z-index: 1;
+    transform: 
+      translateX(size(-69px, -398px)) 
+      translateY(size(-25px, 173px, forward))
+      scale(size(1, 0.45));
+  }
+
+  &__king {
+    z-index: 2;
+    transform: 
+      translateX(size(46px, -160.5px)) 
+      translateY(size(-164px, -38.5px, forward))
+      scale(size(1, 0.46));
+  }
+
+  &__queen {
+    z-index: 2;
+    transform: 
+      translateX(size(378px, -2.5px)) 
+      translateY(size(-269px, -85.5px, forward))
+      scale(size(1, 0.42))
+      rotate(size(0deg, 7.59deg, forward));
+  }
+
+  &__city {
+    z-index: 4;
+    transform: 
+      translateX(size(-803px, -961px, forward)) 
+      translateY(size(0px, 99px, forward))
+      scale(size(1, 0.545));
+  }
+
+  &__board {
+    z-index: 3;
+    transform: 
+      translateX(size(-800px, -958px, forward)) 
+      translateY(size(3px, 14px, forward))
+      scale(size(1, 0.5458));
+  }
+
+  &__horse {
+    z-index: 5;
+    transform: 
+      translateX(size(152.5px, -91px)) 
+      translateY(size(51px, 89px, forward))
+      scale(size(1, 0.505));
+  }
+
+  &__pawn {
+    z-index: 5;
+    transform: 
+      translateX(size(556px, 125px)) 
+      translateY(size(-19px, 19px, forward))
+      scale(size(1, 0.5));
+  }
+// ================
+// Контент
+  &__content {
+    position: relative;
+    z-index: 3;
+    max-width: size(542px, 335px);
+  }
+
+  &__title {
+    font-family: var(--font-secondary);
+    font-weight: var(--fw-regular);
+    font-size: size(60px, 36px);
+    font-style: normal;
+    line-height: 110%;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #313131;
+
+    &--first-line {
+      letter-spacing: 0.022em;
+    }
+
+    &--center {
+      position: relative;
+      display: block;
+      text-align: center;
+      transform: translateX(size(0px, 4px, forward));
+    }
+
+    &--right {
+      display: block;
+      text-align: right;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: #313131;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: var(--fw-regular);
+    line-height: size(129%, 130%);
+    margin-bottom: size(39px, 33px);
+
+    @media (max-width: 768px) {
+      text-align: start;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 14px;
+    }
+  }
+
+  &__actions {
+    position: relative;
+    display: flex;
+    gap: size(16px, 12px);
+    flex-wrap: wrap;
+    z-index: 10;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__pawn {
+      display: none;
+    }
+  }
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  box-sizing: border-box;
+  max-height: 72px;
+  min-width: 263px;
+	flex: 1 0 0;
+  padding: 13px 40px;
+  padding-inline: size(48px, 40px);
+  border-radius: 66px;
+	font-size: 16px;
+	line-height: 130%;
+	text-align: center;
+	font-weight: var(--fw-medium);
+	font-family: var(--font-primary);
+  z-index: 10;
+
+  &--primary {
+    background: #1F1F1F;
+	  color: #fff;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: transparent;
+        box-shadow: inset 0 0 0 2px #1F1F1F;
+        color: #1F1F1F;
+      }
+    }
+  }
+
+  &--secondary {
+    box-shadow: inset 0 0 0 2px #1F1F1F;
+
+    @media (max-width: 1365px) {
+      background-color: #fff;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background-color: #FBCE51;
+        box-shadow: inset 0 0 0 2px #FBCE51;
+      }
+    }
+  }
+
+  @media (max-width: 374px) {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,61 @@
+@use "sass:math";
+
+$size-min-viewport: 376px;
+$size-max-viewport: 1366px;
+
+
+// helpers
+@function _has-css-math($value) {
+  $type: type-of($value);
+  @return $type == "string" or $type == "calculation";
+}
+
+@function _is-number($value) {
+  @return type-of($value) == "number";
+}
+
+
+@function size(
+  $desktop,
+  $mobile,
+  $dir: null,
+  $min-viewport: $size-min-viewport,
+  $max-viewport: $size-max-viewport
+) {
+
+  $hasMath: _has-css-math($desktop) or _has-css-math($mobile);
+
+  // если используется CSS-математика — направление обязательно
+  @if $hasMath and $dir == null {
+    @error "size(): при использовании calc()/vw/% нужно указать forward | reverse";
+  }
+
+  // автоопределение только для чисел
+  @if not $hasMath and $dir == null and _is-number($desktop) and _is-number($mobile) {
+    @if $desktop > $mobile { $dir: forward; }
+    @else { $dir: reverse; }
+  }
+
+  @if $dir == null { $dir: forward; }
+
+  // progress mobile → desktop
+  $progress-up: calc(
+    (100vw - #{$min-viewport}) /
+    (#{$max-viewport} - #{$min-viewport})
+  );
+
+  // progress desktop → mobile
+  $progress-down: calc(
+    (#{$max-viewport} - 100vw) /
+    (#{$max-viewport} - #{$min-viewport})
+  );
+
+  // выбираем нужный прогресс
+  $progress: if($dir == reverse, $progress-up, $progress-down);
+
+  @return clamp(
+    min(#{$desktop}, #{$mobile}),
+    calc(#{$desktop} + (#{$mobile} - #{$desktop}) * #{$progress}),
+    max(#{$desktop}, #{$mobile})
+  );
+}

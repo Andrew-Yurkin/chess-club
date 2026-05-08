@@ -1,0 +1,9 @@
+#app {
+  position: relative;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: var(--padding-inline);
+  max-width: var(--container);
+}

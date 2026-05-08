@@ -1,0 +1,16 @@
+@import './helpers';
+
+:root {
+	/* font families */
+  --font-primary: "Golos Text", sans-serif;
+  --font-secondary: "Merriweather", serif;
+
+	/* font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+	--container: 1366px;
+  --padding-inline: #{size(72px, 18px)};
+}
