@@ -5,7 +5,7 @@
   width: 100%;
   min-height: size(700px, 774px, forward);
   padding-top: size(125px, 90px);
-  background-color: #E9DED4;
+  background-color: var(--color-hero-footer);
   overflow: hidden;
 
   &::before {
@@ -125,7 +125,7 @@
     margin-bottom: 24px;
     text-transform: uppercase;
     letter-spacing: 0.01em;
-    color: #313131;
+    color: var(--color-title);
 
     &--first-line {
       letter-spacing: 0.022em;
@@ -149,7 +149,7 @@
   }
 
   &__subtitle {
-    color: #313131;
+    color: var(--color-title);
     text-align: center;
     font-family: var(--font-primary);
     font-size: 18px;
@@ -204,28 +204,30 @@
   z-index: 10;
 
   &--primary {
-    background: #1F1F1F;
-	  color: #fff;
+    background: var(--color-button-primary);
+	  color: var(--color-white);
+    
+
     @media (hover: hover) and (pointer: fine) {
       &:hover {
         background-color: transparent;
-        box-shadow: inset 0 0 0 2px #1F1F1F;
-        color: #1F1F1F;
+        box-shadow: inset 0 0 0 2px var(--color-button-primary);
+        color: var(--color-button-primary);
       }
     }
   }
 
   &--secondary {
-    box-shadow: inset 0 0 0 2px #1F1F1F;
+    box-shadow: inset 0 0 0 2px var(--color-button-primary);
 
     @media (max-width: 1365px) {
-      background-color: #fff;
+      background-color: var(--color-white);
     }
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
-        background-color: #FBCE51;
-        box-shadow: inset 0 0 0 2px #FBCE51;
+        background-color: var(--color-button-secondary-hover);
+        box-shadow: inset 0 0 0 2px var(--color-button-secondary-hover);
       }
     }
   }
