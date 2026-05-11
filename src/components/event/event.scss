@@ -1,4 +1,4 @@
-@import '/src/styles/helpers.scss';
+@use '/src/styles/helpers.scss' as *;
 
 .event {
 	display: flex;
@@ -55,6 +55,18 @@
 		&_art {
 			position: relative;
 			min-height: 402px;
+
+			&::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				z-index: 1;
+				background-image: url("/src/assets/event/bg.png");
+				background-repeat: repeat;
+				mix-blend-mode: color-burn;
+				opacity: 0.7;
+				pointer-events: none;
+			}
 
 			@media (max-width: 374px) {
 				min-height: 335px;
