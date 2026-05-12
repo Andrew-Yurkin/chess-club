@@ -24,11 +24,11 @@
     </div>\r
   \r
     <div class='event__second-block_about'>\r
-      <h3 class="event__second-block_title even-title">\r
+      <h3 class="event__second-block_title even-title" id='about'>\r
         и Сеанс <span class='even-text-accent'>одновременной игры в\xA0шахматы на\xA0160\xA0досках</span> гроссмейстера О.\xA0Бендера\r
       </h3>\r
 \r
-      <dl class="event__second-block_info info-event" id='about'>\r
+      <dl class="event__second-block_info info-event">\r
         <div class="info-event__row">\r
           <dt>Место проведения:</dt>\r
           <dd>Клуб «Картонажник»</dd>\r
