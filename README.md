@@ -1,8 +1,6 @@
 ## 🔗 Live Demo
 
-<p align="center">
-  <a href="https://andrew-yurkin.github.io/chess-club/"></a>
-</p>
+https://andrew-yurkin.github.io/chess-club/
 
 ## Стек
 
