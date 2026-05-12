@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   min-height: size(700px, 774px, forward);
-  padding-top: size(125px, 90px);
+  padding-top: size(124px, 90px);
   background-color: var(--color-hero-footer);
   overflow: hidden;
   isolation: isolate;
@@ -67,9 +67,9 @@
     font-weight: var(--fw-regular);
     font-size: size(60px, 36px);
     line-height: 110%;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     text-transform: uppercase;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.012em;
     color: var(--color-title);
 
     &--first-line {
@@ -104,8 +104,8 @@
     font-family: var(--font-primary);
     font-size: 18px;
     font-weight: var(--fw-regular);
-    line-height: 128%;
-    margin-bottom: size(38.5px, 32px);
+    line-height: 130%;
+    margin-bottom: size(40px, 30px);
 
     @media (max-width: 425px) {
       text-align: start;
@@ -205,7 +205,7 @@
   max-height: 72px;
   min-width: 263px;
 	flex: 1 0 0;
-  padding: size(20px, 14px) size(48px, 40px);
+  padding: size(15px, 14px) size(48px, 40px);
   border-radius: 66px;
 	font-size: 16px;
 	line-height: 130%;
