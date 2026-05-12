@@ -11,7 +11,7 @@
     padding-top: size(26px, 18px);
     padding-left: var(--padding-inline);
     position: relative;
-    transform: translateX(size(0px, -3px));
+    transform: translateX(size(0px, -4.5px)) translateY(size(0px, -0.5px));
   }
 
   &__logo {
@@ -31,13 +31,13 @@
 
     &-text {
       font-family: var(--font-primary);
-      color: #595653;
-      font-weight: 700;
+      color: var(--color-logo);
+      font-weight: var(--fw-bold);
       font-size: size(16.65px, 14.42px);
-      line-height: size(107%, 108%, forward);
+      line-height: 106%;
       text-transform: uppercase;
       width: 147px;
-      transform: translateX(size(0px, -4.5px));
+      transform: translateX(size(0px, -6px));
 
       > :first-child {
         display: block;

@@ -13,11 +13,10 @@
 		font-family: var(--font-secondary);
 		font-size: size(54px, 36px, reverse, 1366px, 600px);
 		font-weight: var(--fw-regular);
-		line-height: size(120%, 113%);
+		line-height: size(120%, 111%);
 		text-transform: uppercase;
 		display: inline-block;
-		letter-spacing: 0.8px;
-		margin-left: size(0px, 2px, forward);
+		letter-spacing: 0.6px;
 
 		@media (max-width: 374px) {
 			font-size: 28px;
@@ -40,7 +39,7 @@
 
 		@media (max-width: 768px) {
 			top: 0px;
-			margin-top: 10px;
+			margin-top: 12px;
 		}
 
 		@media (max-width: 560px) {
