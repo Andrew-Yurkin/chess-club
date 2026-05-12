@@ -104,8 +104,8 @@
     font-family: var(--font-primary);
     font-size: 18px;
     font-weight: var(--fw-regular);
-    line-height: 130%;
-    margin-bottom: size(40px, 30px);
+    line-height: size(128%, 130%, forward);
+    margin-bottom: size(39px, 30px);
 
     @media (max-width: 425px) {
       text-align: start;
