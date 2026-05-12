@@ -35,6 +35,13 @@
 		max-width: 300px;
 		margin-left: size(5.5px, 0px);
 		letter-spacing: 0;
+		position: relative;
+		top: -2px;
+
+		@media (max-width: 768px) {
+			top: 0px;
+			margin-top: 10px;
+		}
 
 		@media (max-width: 560px) {
 			max-width: 100%;
