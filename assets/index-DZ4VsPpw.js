@@ -13,13 +13,13 @@
   <div class='event__second-block'>\r
     <div class="event__second-block_art">\r
       <div class="event__second-block_scene scene-event" aria-hidden="true">\r
-        <img src="assets/event/paper.png" class='scene-event__paper' alt="">\r
-        <img src="assets/event/money.png" class='scene-event__money' alt="">\r
-        <img src="assets/event/star-chess-player.svg"  class='scene-event__star-chess-player' alt="">\r
-        <img src="assets/event/chess-player.png"   class='scene-event__chess-player' alt="">\r
-        <img src="assets/event/star-horse.svg"   class='scene-event__star-horse' alt="">\r
-        <img src="assets/event/hand.png" class='scene-event__hand' alt="">\r
-        <img src="assets/event/horse.png" class='scene-event__horse' alt="">\r
+        <img src="assets/event/paper.png" class='scene-event__paper' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/money.png" class='scene-event__money' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/star-chess-player.svg"  class='scene-event__star-chess-player' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/chess-player.png"   class='scene-event__chess-player' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/star-horse.svg"   class='scene-event__star-horse' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/hand.png" class='scene-event__hand' alt="" loading="lazy" decoding="async">\r
+        <img src="assets/event/horse.png" class='scene-event__horse' alt="" loading="lazy" decoding="async">\r
       </div>\r
     </div>\r
   \r
@@ -131,7 +131,7 @@
 \r
         <li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Хозе-Рауль Капабланка" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Хозе-Рауль Капабланка" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Хозе-Рауль Капабланка</h3>\r
           <p class="member-card__role">Чемпион мира по шахматам</p>\r
@@ -140,7 +140,7 @@
 \r
 				<li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Эммануил Ласкер" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Эммануил Ласкер" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Эммануил Ласкер</h3>\r
           <p class="member-card__role">Чемпион мира по шахматам</p>\r
@@ -149,7 +149,7 @@
 \r
 				<li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Александр Алехин" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Александр Алехин" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Александр Алехин</h3>\r
           <p class="member-card__role">Чемпион мира по шахматам</p>\r
@@ -158,7 +158,7 @@
 \r
 				<li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Арон Нимцович" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Арон Нимцович" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Арон Нимцович</h3>\r
           <p class="member-card__role">Чемпион мира по шахматам</p>\r
@@ -167,7 +167,7 @@
 \r
 				<li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Рихард Рети" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Рихард Рети" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Рихард Рети</h3>\r
           <p class="member-card__role">Чемпион мира по шахматам</p>\r
@@ -176,7 +176,7 @@
 \r
 				<li class="member-card">\r
           <div class="member-card__img">\r
-            <img src="assets/members/member.png" alt="Остап Бендер" loading="lazy">\r
+            <img src="assets/members/member.png" alt="Остап Бендер" loading="lazy" decoding="async">\r
           </div>\r
           <h3 class="member-card__name">Остап Бендер</h3>\r
           <p class="member-card__role">Гроссмейстер</p>\r
