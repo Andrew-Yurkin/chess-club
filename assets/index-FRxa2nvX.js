@@ -23,7 +23,7 @@
       </div>\r
     </div>\r
   \r
-    <div>\r
+    <div class='event__second-block_about' id='stages'>\r
       <h3 class="event__second-block_title even-title">\r
         и Сеанс <span class='even-text-accent'>одновременной игры в\xA0шахматы на\xA0160\xA0досках</span> гроссмейстера О.\xA0Бендера\r
       </h3>\r
@@ -105,11 +105,11 @@
 \r
       <div class="hero__actions" role="navigation" aria-label="Основные действия">\r
         <a href="#event" aria-label="Перейти к описанию турнира" class="btn btn--primary">Поддержать шахматную мысль</a>\r
-        <a href="#members" aria-label="Перейти к участникам" class="btn btn--secondary">Подробнее о\xA0турнире</a>\r
+        <a href="#stages" aria-label="Перейти к информации о турнире" class="btn btn--secondary">Подробнее о\xA0турнире</a>\r
       </div>\r
     </div>\r
   </div>\r
-</section>`,i=`<section class="members" id='members'>\r
+</section>`,i=`<section class="members">\r
   <div class="members__container container">\r
 \r
     <div class="members__top">\r
