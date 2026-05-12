@@ -1,13 +1,19 @@
-window.addEventListener('load', () => {
-  const track = document.querySelector('.ticker__track')
-  if (!track) return
+window.addEventListener('DOMContentLoaded', () => {
+  const tracks = document.querySelectorAll('.ticker__track')
+  if (!tracks.length) return
 
-  if (track.dataset.ready) return
-  track.dataset.ready = 'true'
+  tracks.forEach((track) => {
+    if (track.dataset.tickerReady) return
+    track.dataset.tickerReady = 'true'
 
-  track.innerHTML += track.innerHTML
+    const wrap = track.parentElement
 
-  requestAnimationFrame(() => {
-    track.classList.add('animate')
+    const clone = track.cloneNode(true)
+    clone.setAttribute('aria-hidden', 'true')
+    wrap.appendChild(clone)
+
+    requestAnimationFrame(() => {
+      wrap.classList.add('animate')
+    })
   })
 })

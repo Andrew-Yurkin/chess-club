@@ -18,6 +18,10 @@
 		display: inline-block;
 		letter-spacing: 0.8px;
 		margin-left: size(0px, 2px, forward);
+
+		@media (max-width: 374px) {
+			font-size: 28px;
+		}
 	}
 
 	&__subtitle {
@@ -161,8 +165,6 @@
 			}
 		}
 }
-.stage-card--1 {}
-.stage-card--2 {}
 
 .stage-card--3 {
 	grid-row: span 2;
@@ -170,9 +172,6 @@
 		grid-row: span 1;
 	}
 }
-.stage-card--4 {}
-.stage-card--5 {}
-.stage-card--6 {}
 
 .stage-card--7 {
 	grid-column: span 2;
@@ -186,10 +185,8 @@
 	background-repeat: repeat;
 	background-size: cover;
 	min-width: 100%;
-	// flex: 0 0 calc(100% - 16px);
-	// margin-right: 16px;
-	padding-top: 48px;
 	min-height: 300px;
+	padding-top: 48px;
 
 	&::before {
 		content: "";
@@ -210,6 +207,7 @@
 	&__track {
 		display: flex;
   	transition: transform 0.5s ease;
+		gap: 20px;
 		margin: 0 -16px;
 	}
 

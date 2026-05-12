@@ -50,12 +50,12 @@
   to   { transform: translateX(-50%); }
 }
 
-.ticker__track.animate {
+.ticker__wrap.animate {
   animation: tickerMove var(--speed, 25s) linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ticker__track.animate {
+  .ticker__wrap.animate {
     animation: none;
   }
 }

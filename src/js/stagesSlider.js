@@ -1,3 +1,5 @@
+const GAP = 16
+
 function initStagesSlider() {
   const track = document.querySelector('.stages-slider__track')
   const slides = document.querySelectorAll('.stages-slide')
@@ -5,31 +7,49 @@ function initStagesSlider() {
   const btnNext = document.querySelector('.stages-slider__btn--next')
   const dots = document.querySelectorAll('.stages-slider__dot')
 
+  if (!track || !slides.length) return
+
   let index = 0
   const lastIndex = slides.length - 1
+  let resizeRAF = null
+
+  function getSlideWidth() {
+    return slides[0].getBoundingClientRect().width
+  }
 
   function updateSlider() {
-    track.style.transform = `translateX(-${index * 100}%)`
+    const slideWidth = getSlideWidth()
+    const offset = (slideWidth + GAP) * index
+    track.style.transform = `translateX(-${offset}px)`
 
     dots.forEach((dot) => dot.classList.remove('is-active'))
-    dots[index].classList.add('is-active')
+    dots[index]?.classList.add('is-active')
 
     btnPrev.disabled = index === 0
     btnNext.disabled = index === lastIndex
   }
 
-  btnNext.addEventListener('click', () => {
+  function next() {
     if (index < lastIndex) {
       index++
       updateSlider()
     }
-  })
+  }
 
-  btnPrev.addEventListener('click', () => {
+  function prev() {
     if (index > 0) {
       index--
       updateSlider()
     }
+  }
+
+  btnNext?.addEventListener('click', next)
+  btnPrev?.addEventListener('click', prev)
+
+  // ⭐ ГЛАВНОЕ ИСПРАВЛЕНИЕ — реакция на resize
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(resizeRAF)
+    resizeRAF = requestAnimationFrame(updateSlider)
   })
 
   updateSlider()

@@ -3,12 +3,14 @@ import './styles/main.scss'
 import event from './components/event/event.html?raw'
 import header from './components/header/header.html?raw'
 import hero from './components/hero/hero.html?raw'
+import members from './components/members/members.html?raw'
 import stages from './components/stages/stages.html?raw'
 import ticker from './components/ticker/ticker.html?raw'
 
 import './js/ticker.js'
 
 import DynamicAdapt from './js/helpers.js'
+import initMembersSlider from './js/membersSlider.js'
 import initStagesSlider from './js/stagesSlider.js'
 
 const app = document.querySelector('#app')
@@ -26,8 +28,11 @@ renderMain(hero)
 renderMain(ticker)
 renderMain(event)
 renderMain(stages)
+renderMain(members)
+renderMain(ticker)
 renderHeader(header)
 
 const da = new DynamicAdapt('max')
 da.init()
 initStagesSlider()
+initMembersSlider()
