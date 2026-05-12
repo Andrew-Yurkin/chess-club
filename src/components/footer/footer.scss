@@ -1,0 +1,18 @@
+@use '../../styles/helpers' as *;
+
+.footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 40px size(72px, 20px) size(72px, 59px) size(72px, 20px);
+		background-color: var(--color-footer);
+
+		&__text {
+			color: var(--color-title);
+			font-family: var(--font-primary);
+			font-size: 16px;
+			font-weight: var(--fw-regular);
+			line-height: 120%;
+			opacity: 0.6;
+		}
+}

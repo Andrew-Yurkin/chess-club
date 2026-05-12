@@ -1,6 +1,7 @@
 import './styles/main.scss'
 
 import event from './components/event/event.html?raw'
+import footer from './components/footer/footer.html?raw'
 import header from './components/header/header.html?raw'
 import hero from './components/hero/hero.html?raw'
 import members from './components/members/members.html?raw'
@@ -24,13 +25,20 @@ function renderMain(html) {
   main.insertAdjacentHTML('beforeend', html)
 }
 
+function renderFooter(html) {
+  app.insertAdjacentHTML('beforeend', html)
+}
+
+renderHeader(header)
+
 renderMain(hero)
 renderMain(ticker)
 renderMain(event)
 renderMain(stages)
 renderMain(members)
 renderMain(ticker)
-renderHeader(header)
+
+renderFooter(footer)
 
 const da = new DynamicAdapt('max')
 da.init()

@@ -107,7 +107,7 @@
 		}
 
 		&_info {
-			margin-top: size(60px, 48px, reverse, 1366px, 768px);
+			margin-top: size(62px, 48px, reverse, 1366px, 768px);
 		}
 
 		&_note {
@@ -244,7 +244,17 @@
 }
 
 .old-price {
-	text-decoration: line-through;
   color: var(--color-warning);
 	margin-right: 5px;
+	position: relative;
+
+	&::before{
+		content:'';
+		position: absolute;
+		top: 61%;
+		left: -2px;
+		height: 2px;
+		width: 100%;
+		background-color: var(--color-warning);
+	}
 }
