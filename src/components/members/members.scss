@@ -1,8 +1,6 @@
 @use '/src/styles/helpers.scss' as *;
 
 .members {
-	scroll-margin-top: 40px;
-
 	&__container {
 		margin-top: size(200px, 120px);
 		margin-bottom: size(140px, 99px);

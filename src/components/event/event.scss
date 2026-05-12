@@ -53,6 +53,8 @@
 		column-gap: 44px;
 		margin-top: size(64px, 56.5px);
 
+		&_about {}
+
 		&_art {
 			position: relative;
 			min-height: 402px;
@@ -180,6 +182,11 @@
 }
 
 .info-event {
+		scroll-margin-top: 260px;
+
+		@media (max-width: 768px) {
+				scroll-margin-top: 40px;
+		}
 		&__row {
 			display: grid;
   		grid-template-columns: 307px 1fr;
