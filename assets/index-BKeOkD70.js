@@ -79,13 +79,14 @@
   </div>\r
 </header>`,r=`<section class="hero" aria-labelledby="hero-title">\r
 	<div class="hero__scene scene-hero" aria-hidden="true">\r
-		<img src="assets/hero/king.png" class="scene-hero__king" alt="" />\r
-		<img src="assets/hero/queen.png" class="scene-hero__queen" alt="" />\r
-    <img src="assets/hero/horse.png" class="scene-hero__horse" alt="" />\r
-    <img src="assets/hero/pawn.png" class="scene-hero__pawn" alt="" />\r
-		<img src="assets/hero/sun.svg" class="scene-hero__sun" alt="" />\r
-		<img src="assets/hero/board.png" class="scene-hero__board" alt="" />\r
-		<img src="assets/hero/city.png" class="scene-hero__city" alt="" />\r
+		<img src="assets/hero/king.png" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__king" alt="" />\r
+		<img src="assets/hero/queen.png" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__queen" alt="" />\r
+    <img src="assets/hero/horse.png" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__horse" alt="" />\r
+    <img src="assets/hero/pawn.png" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__pawn" alt="" />\r
+		<img src="assets/hero/sun.svg" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__sun" alt="" />\r
+		<img src="assets/hero/board.png" loading="lazy" decoding="async" fetchpriority="low" class="scene-hero__board" alt="" />\r
+		<img src="assets/hero/city.png" fetchpriority="high"\r
+  decoding="async" class="scene-hero__city" alt="" />\r
 	</div>\r
   \r
 \r
