@@ -23,12 +23,12 @@
       </div>\r
     </div>\r
   \r
-    <div class='event__second-block_about' id='stages'>\r
+    <div class='event__second-block_about'>\r
       <h3 class="event__second-block_title even-title">\r
         и Сеанс <span class='even-text-accent'>одновременной игры в\xA0шахматы на\xA0160\xA0досках</span> гроссмейстера О.\xA0Бендера\r
       </h3>\r
 \r
-      <dl class="event__second-block_info info-event">\r
+      <dl class="event__second-block_info info-event" id='about'>\r
         <div class="info-event__row">\r
           <dt>Место проведения:</dt>\r
           <dd>Клуб «Картонажник»</dd>\r
@@ -105,7 +105,7 @@
 \r
       <div class="hero__actions" role="navigation" aria-label="Основные действия">\r
         <a href="#event" aria-label="Перейти к описанию турнира" class="btn btn--primary">Поддержать шахматную мысль</a>\r
-        <a href="#stages" aria-label="Перейти к информации о турнире" class="btn btn--secondary">Подробнее о\xA0турнире</a>\r
+        <a href="#about" aria-label="Перейти к информации о турнире" class="btn btn--secondary">Подробнее о\xA0турнире</a>\r
       </div>\r
     </div>\r
   </div>\r
