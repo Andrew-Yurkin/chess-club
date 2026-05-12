@@ -15,7 +15,7 @@ https://andrew-yurkin.github.io/chess-club/
 
 ### 1. Клонировать репозиторий
 
-git clone https://github.com/USERNAME/REPO.git
+git clone https://github.com/Andrew-Yurkin/chess-club.git
 
 ### 2. Перейти в папку проекта
 
