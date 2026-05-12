@@ -7,19 +7,19 @@
         <span class='event__first-block_text-accent even-text-accent'>«Плодотворная дебютная идея»</span>\r
       </h2>\r
       \r
-      <img data-da=".event__first-block_mobile-slot,first,768" class='event__first-block_img' src="/assets/event/chess-tournament.png" alt="Иллюстрация шахматного турнира">\r
+      <img data-da=".event__first-block_mobile-slot,first,768" class='event__first-block_img' src="assets/event/chess-tournament.png" alt="Иллюстрация шахматного турнира">\r
   </div>\r
   \r
   <div class='event__second-block'>\r
     <div class="event__second-block_art">\r
       <div class="event__second-block_scene scene-event" aria-hidden="true">\r
-        <img src="/assets/event/paper.png" class='scene-event__paper' alt="">\r
-        <img src="/assets/event/money.png" class='scene-event__money' alt="">\r
-        <img src="/assets/event/star-chess-player.svg"  class='scene-event__star-chess-player' alt="">\r
-        <img src="/assets/event/chess-player.png"   class='scene-event__chess-player' alt="">\r
-        <img src="/assets/event/star-horse.svg"   class='scene-event__star-horse' alt="">\r
-        <img src="/assets/event/hand.png" class='scene-event__hand' alt="">\r
-        <img src="/assets/event/horse.png" class='scene-event__horse' alt="">\r
+        <img src="assets/event/paper.png" class='scene-event__paper' alt="">\r
+        <img src="assets/event/money.png" class='scene-event__money' alt="">\r
+        <img src="assets/event/star-chess-player.svg"  class='scene-event__star-chess-player' alt="">\r
+        <img src="assets/event/chess-player.png"   class='scene-event__chess-player' alt="">\r
+        <img src="assets/event/star-horse.svg"   class='scene-event__star-horse' alt="">\r
+        <img src="assets/event/hand.png" class='scene-event__hand' alt="">\r
+        <img src="assets/event/horse.png" class='scene-event__horse' alt="">\r
       </div>\r
     </div>\r
   \r
