@@ -73,7 +73,7 @@
       <img class='header__logo-img' src="assets/logo.svg" alt="Клуб четырёх коней" />\r
       <span class="header__logo-text">\r
         <span>Клуб</span>\r
-        <span>четырёх коней</span>\r
+        <span>четырех коней</span>\r
       </span>\r
     </a>\r
   </div>\r
