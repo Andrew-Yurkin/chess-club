@@ -1,5 +1,5 @@
-<section class="hero">
-	<div class="hero__scene scene-hero">
+<section class="hero" aria-labelledby="hero-title">
+	<div class="hero__scene scene-hero" aria-hidden="true">
 		<img src="/src/assets/hero/king.png" class="scene-hero__king" alt="" />
 		<img src="/src/assets/hero/queen.png" class="scene-hero__queen" alt="" />
     <img src="/src/assets/hero/horse.png" class="scene-hero__horse" alt="" />
@@ -23,9 +23,9 @@
         Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам
       </p>
 
-      <div class="hero__actions">
-        <a href="#about" class="btn btn--primary">Поддержать шахматную мысль</a>
-        <a href="#members" class="btn btn--secondary">Подробнее о турнире</a>
+      <div class="hero__actions" role="navigation" aria-label="Основные действия">
+        <a href="#event" aria-label="Перейти к описанию турнира" class="btn btn--primary">Поддержать шахматную мысль</a>
+        <a href="#members" aria-label="Перейти к участникам" class="btn btn--secondary">Подробнее о турнире</a>
       </div>
     </div>
   </div>

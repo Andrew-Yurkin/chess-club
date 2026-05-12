@@ -1,16 +1,17 @@
 @use '/src/styles/helpers.scss' as *;
 
 .members {
-	margin-top: size(200px, 120px);
+	scroll-margin-top: 40px;
 
 	&__container {
-		margin-bottom: size(140px, 100px);
+		margin-top: size(200px, 120px);
+		margin-bottom: size(140px, 99px);
 	}
 	&__top {
 		display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: size(60px, 1px);
+		margin-bottom: size(60px, 1px);
 	}
 	&__title {
 		color: var(--color-title);
@@ -91,6 +92,7 @@
 	color: var(--color-title);
 	font-family: var(--font-primary);
 	line-height: 120%;
+	transition: transform .25s ease;
 	flex: 0 0 calc((100% - 40px) / 3);
 
 	@media (max-width: 1110px) {
@@ -103,6 +105,15 @@
 
 	@media (max-width: 320px) {
 		transform: translateX(-18px);
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+  		box-shadow:
+				inset 0 2px 3px rgba(0,0,0,.08),
+    		inset 0 -3px 6px rgba(0,0,0,.08),
+    		0 14px 28px rgba(0,0,0,.18);
+		}
 	}
 
 	&__img {

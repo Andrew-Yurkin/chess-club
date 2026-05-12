@@ -1,78 +1,78 @@
-<section class="members">
+<section class="members" id='members'>
   <div class="members__container container">
 
     <div class="members__top">
       <h2 class="members__title title">Участники турнира</h2>
 
       <div class="members__controls" data-da=".members__controls_mobile,0,768">
-        <button class="members__btn members__btn--prev"></button>
-        <span class="members__counter">
+        <button type="button" class="members__btn members__btn--prev" aria-label="Предыдущий участник"></button>
+        <span class="members__counter" aria-live="polite">
           <span class="members__current">1</span>
           <span class="members__separator">/</span>
           <span class="members__total">6</span>
         </span>
-        <button class="members__btn members__btn--next"></button>
+        <button type="button" class="members__btn members__btn--next" aria-label="Следующий участник"></button>
       </div>
     </div>
 
-    <div class="members__slider">
-      <div class="members__track">
+    <div class="members__slider" role="region" aria-label="Участники турнира">
+      <ul class="members__track">
 
-        <article class="member-card">
+        <li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Хозе-Рауль Капабланка" loading="lazy">
           </div>
           <h3 class="member-card__name">Хозе-Рауль Капабланка</h3>
           <p class="member-card__role">Чемпион мира по шахматам</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Хозе-Рауле Капабланке" class="member-card__btn">Подробнее</a>
+        </li>
 
-				<article class="member-card">
+				<li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Эммануил Ласкер" loading="lazy">
           </div>
           <h3 class="member-card__name">Эммануил Ласкер</h3>
           <p class="member-card__role">Чемпион мира по шахматам</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Эммануил Ласкер" class="member-card__btn">Подробнее</a>
+        </li>
 
-				<article class="member-card">
+				<li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Александр Алехин" loading="lazy">
           </div>
           <h3 class="member-card__name">Александр Алехин</h3>
           <p class="member-card__role">Чемпион мира по шахматам</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Александр Алехин" class="member-card__btn">Подробнее</a>
+        </li>
 
-				<article class="member-card">
+				<li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Арон Нимцович" loading="lazy">
           </div>
           <h3 class="member-card__name">Арон Нимцович</h3>
           <p class="member-card__role">Чемпион мира по шахматам</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Арон Нимцович" class="member-card__btn">Подробнее</a>
+        </li>
 
-				<article class="member-card">
+				<li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Рихард Рети" loading="lazy">
           </div>
           <h3 class="member-card__name">Рихард Рети</h3>
           <p class="member-card__role">Чемпион мира по шахматам</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Рихард Рети" class="member-card__btn">Подробнее</a>
+        </li>
 
-				<article class="member-card">
+				<li class="member-card">
           <div class="member-card__img">
-            <img src="/src/assets/members/member.png" alt="Участник" loading="lazy">
+            <img src="/src/assets/members/member.png" alt="Остап Бендер" loading="lazy">
           </div>
           <h3 class="member-card__name">Остап Бендер</h3>
           <p class="member-card__role">Гроссмейстер</p>
-          <a href="#" class="member-card__btn">Подробнее</a>
-        </article>
+          <a href="#" aria-label="Подробнее о Остап Бендер" class="member-card__btn">Подробнее</a>
+        </li>
 
-      </div>
+      </ul>
     </div>
 
     <div class='members__controls_mobile'></div>

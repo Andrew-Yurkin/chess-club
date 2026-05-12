@@ -5,6 +5,8 @@
   color: var(--color-white);
   overflow: hidden;
   width: 100%;
+  contain: layout paint;
+  cursor: default;
 }
 
 .ticker__wrap {
@@ -18,6 +20,8 @@
   gap: 40px;
   padding: size(13.52px, 7px) 0;
   will-change: transform;
+
+  animation: tickerMove 25s linear infinite;
 }
 
 .ticker__item {
@@ -50,12 +54,19 @@
   to   { transform: translateX(-50%); }
 }
 
-.ticker__wrap.animate {
-  animation: tickerMove var(--speed, 25s) linear infinite;
+@media (prefers-reduced-motion: reduce) {
+  .ticker__track {
+    animation: none;
+    transform: none;
+  }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .ticker__wrap.animate {
-    animation: none;
+.ticker--paused .ticker:focus-within .ticker__track {
+  animation-play-state: paused;
+}
+
+@media (hover: hover) {
+  .ticker:hover .ticker__track {
+    animation-play-state: paused;
   }
 }

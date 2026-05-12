@@ -1,91 +1,91 @@
 <section class="stages container">
     <div class="stages__header">
-      <h2 class="stages__title">
+      <h2 class="stages__title" id="stages-title">
 				Этапы преображения Васюков
-				<span class="stages__subtitle">Будущие источники обогащения васюкинцев</span>
+				<span class="stages__subtitle" role="doc-subtitle" aria-describedby="stages-title">Будущие источники обогащения васюкинцев</span>
 			</h2>
     </div>
 
     <div class="stages__body">
-      <div class="stages-slider">
+      <div class="stages-slider" role="region" aria-label="Этапы преображения Васюков">
         <div class="stages-slider__track">
 
-          <div class="stages-slide" id="slide-1"></div>
-          <div class="stages-slide" id="slide-2"></div>
-          <div class="stages-slide" id="slide-3"></div>
-          <div class="stages-slide" id="slide-4"></div>
-					<div class="stages-slide" id="slide-5"></div>
+          <div class="stages-slide" id="slide-1" role="group" aria-label="Слайд 1"></div>
+          <div class="stages-slide" id="slide-2" role="group" aria-label="Слайд 2"></div>
+          <div class="stages-slide" id="slide-3" role="group" aria-label="Слайд 3"></div>
+          <div class="stages-slide" id="slide-4" role="group" aria-label="Слайд 4"></div>
+					<div class="stages-slide" id="slide-5" role="group" aria-label="Слайд 5"></div>
 
         </div>
       </div>
 
-      <div class="stages-grid">
-        <div class="stage-card stage-card--1" data-da="#slide-1,0,768">
-					<div class="stage-card__num">
+      <ol class="stages-grid">
+        <li class="stage-card stage-card--1" data-da="#slide-1,0,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>1</span>
 					</div>
   				<p class="stage-card__text">
   				  Строительство железнодорожной магистрали Москва-Васюки
   				</p>
-				</div>
-        <div class="stage-card stage-card--2" data-da="#slide-1,1,768">
-					<div class="stage-card__num">
+				</li>
+        <li class="stage-card stage-card--2" data-da="#slide-1,1,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>2</span>
 					</div>
   				<p class="stage-card__text">
   				  Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов
   				</p>
-				</div>
+				</li>
 
-        <div class="stage-card stage-card--3" data-da="#slide-2,0,768">
-					<div class="stage-card__num">
+        <li class="stage-card stage-card--3" data-da="#slide-2,0,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>3</span>
 					</div>
   				<p class="stage-card__text">
   				  Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет
   				</p>
-				</div>
+				</li>
 
-        <div class="stage-card stage-card--4" data-da="#slide-3,0,768">
-					<div class="stage-card__num">
+        <li class="stage-card stage-card--4" data-da="#slide-3,0,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>4</span>
 					</div>
   				<p class="stage-card__text">
   				  Строительство дворца для турнира
   				</p>
-				</div>
-        <div class="stage-card stage-card--5" data-da="#slide-3,1,768">
-					<div class="stage-card__num">
+				</li>
+        <li class="stage-card stage-card--5" data-da="#slide-3,1,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>5</span>
 					</div>
   				<p class="stage-card__text">
   				  Размещение гаражей для гостевого <br/> автотранспорта
   				</p>
-				</div>
+				</li>
 
-        <div class="stage-card stage-card--6" data-da="#slide-4,0,768">
-					<div class="stage-card__num">
+        <li class="stage-card stage-card--6" data-da="#slide-4,0,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>6</span>
 					</div>
   				<p class="stage-card__text">
   				  Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов
   				</p>
-				</div>
-        <div class="stage-card stage-card--7" data-da="#slide-5,0,768">
-					<div class="stage-card__num">
+				</li>
+        <li class="stage-card stage-card--7" data-da="#slide-5,0,768">
+					<div class="stage-card__num" aria-hidden="true">
 						<span>7</span>
 					</div>
   				<p class="stage-card__text">
   				  Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн
   				</p>
-				</div>
-      </div>
+				</li>
+      </ol>
 
-      <img class="stages__plane" src="/src/assets/stages/plane.png" alt="" />
+      <img class="stages__plane" src="/src/assets/stages/plane.png" alt="" aria-hidden="true" />
   </div>
 
 	<div class="stages-slider__controls">
-		<button class="stages-slider__btn stages-slider__btn--prev" aria-label="Предыдущий слайд"></button>
+		<button type="button" class="stages-slider__btn stages-slider__btn--prev" aria-label="Предыдущий слайд"></button>
 
 		<div class="stages-slider__pagination">
 			<span class="stages-slider__dot is-active"></span>
@@ -95,6 +95,6 @@
 			<span class="stages-slider__dot"></span>
 		</div>
 
-		<button class="stages-slider__btn stages-slider__btn--next" aria-label="Следующий слайд"></button>
+		<button type="button" class="stages-slider__btn stages-slider__btn--next" aria-label="Следующий слайд"></button>
 	</div>
 </section>

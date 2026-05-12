@@ -4,9 +4,10 @@
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-white);
+	scroll-margin-top: -40px;
 
 	&__first-block {
-		padding-top: size(80px, 48px);
+		margin-top: size(80px, 48px);
 		display: grid;
 		grid-template-columns: 1fr auto;
 		gap: size(64px, 20px);

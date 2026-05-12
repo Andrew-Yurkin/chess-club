@@ -38,6 +38,10 @@
       text-transform: uppercase;
       width: 147px;
       transform: translateX(size(0px, -4.5px));
+
+      > :first-child {
+        display: block;
+      }
     }
   }
 }
