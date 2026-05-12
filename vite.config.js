@@ -5,8 +5,12 @@ export default defineConfig({
   plugins: [
     viteImagemin({
       mozjpeg: {
-        quality: 65,
+        quality: 55,
         progressive: true,
+      },
+
+      optipng: {
+        optimizationLevel: 3,
       },
 
       pngquant: {
