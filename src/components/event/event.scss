@@ -167,12 +167,17 @@
 }
 
 .even-title {
+	scroll-margin-top: 35px;
 	color: var(--color-title);
 	font-family: var(--font-secondary);
 	font-size: size(36px, 28px, reverse, 1366px, 768px);
 	font-weight: var(--fw-medium);
 	line-height: 135%;
 	text-transform: uppercase;
+
+	@media (max-width: 768px) {
+		scroll-margin-top: 15px;
+	}
 }
 
 .even-text-accent {
@@ -182,11 +187,6 @@
 }
 
 .info-event {
-		scroll-margin-top: 260px;
-
-		@media (max-width: 768px) {
-				scroll-margin-top: 40px;
-		}
 		&__row {
 			display: grid;
   		grid-template-columns: 307px 1fr;
