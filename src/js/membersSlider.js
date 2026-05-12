@@ -124,6 +124,9 @@ function initMembersSlider() {
     if (autoplayTimer) clearInterval(autoplayTimer)
   }
 
+  slider.addEventListener('mouseenter', stopAutoplay)
+  slider.addEventListener('mouseleave', startAutoplay)
+
   btnNext.addEventListener('click', () => moveTo(1))
   btnPrev.addEventListener('click', () => moveTo(-1))
 

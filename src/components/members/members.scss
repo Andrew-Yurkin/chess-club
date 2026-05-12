@@ -48,7 +48,7 @@
 		top: -1px;
 		border-radius: 50%;
 		background-color: var(--color-title);
-		background-image: url('/src/assets/members/arrow.svg');
+		background-image: url('/assets/members/arrow.svg');
 		background-position: calc(50% - 1px) 50%;
 		background-repeat: no-repeat;
 		transition: all .2s ease;
@@ -120,7 +120,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-image: url(/src/assets/members/bg.png);
+		background-image: url(/assets/members/bg.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		border-radius: 50%;
