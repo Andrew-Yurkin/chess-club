@@ -63,10 +63,10 @@
       </p>\r
     </div>\r
   </div>\r
-</section>`,t=`<footer class="footer">\r
-  <p class="footer__text">\r
-    Все\xA0персонажи, события и\xA0цитаты являются вымышленными и\xA0не\xA0принадлежат создателям сайта. С\xA0подробностями можно познакомиться в\xA0главе XXXIV романа Ильи Ильфа и\xA0Евгения Петрова «Двенадцать стульев».\r
-  </p>\r
+</section>`,t=`<footer class="footer container">\r
+    <p class="footer__text">\r
+      Все\xA0персонажи, события и\xA0цитаты являются вымышленными и\xA0не\xA0принадлежат создателям сайта. С\xA0подробностями можно познакомиться в\xA0главе XXXIV романа Ильи Ильфа и\xA0Евгения Петрова «Двенадцать стульев».\r
+    </p>\r
 </footer>`,n=`<header class="header">\r
   <div class="container header__container">\r
     <a href="/" class="header__logo">\r
